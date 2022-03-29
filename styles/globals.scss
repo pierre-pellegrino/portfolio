@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "calibri", sans-serif;
+  font-size: 24px;
+}
+
+html, body {
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -14,9 +20,13 @@
 
 h1, div span {
   font-family: "Sequel", sans-serif;
-  font-size: 7rem;
+  font-size: 5rem;
   cursor: default;
   white-space: nowrap;
+}
+
+h2, h3 {
+  font-family: "Sequel", sans-serif;
 }
 
 a {
@@ -26,4 +36,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

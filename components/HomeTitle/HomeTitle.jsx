@@ -1,29 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import Arrow from '../Arrow/Arrow';
 import {
-  globalWrapper,
   titleWrapper,
   titleShadow,
+  homeTitle,
+  rightArrow,
+  bottomArrow
 } from '/styles/Home.module.scss'
 
 const HomeTitle = () => {
   const [xPos, setXPos] = useState(0);
   const [yPos, setYPos] = useState(0);
 
+  const handleScrollToWork = () => {
+    window.scroll(window.innerWidth,0);
+  }
+
   const handleMouseMove = (e) => {
       setXPos(-(Math.round(e.clientX / window.innerWidth * 10) -5));
       setYPos((Math.round(e.clientY / window.innerHeight * 10)) -5);
   }
 
-
   return (
-    <main className={globalWrapper} onMouseMove={(e) => handleMouseMove(e)}>
+    <main className={homeTitle} onMouseMove={(e) => handleMouseMove(e)}>
       <div className={titleWrapper}>
-        <span className={titleShadow} style={{left: `${xPos}px`, bottom: `${yPos}px`}}>
-          pierre pellegrino
-        </span>
         <h1>
           pierre pellegrino
         </h1>
+        <span className={titleShadow} style={{left: `${xPos}px`, bottom: `${yPos}px`}}>
+          pierre pellegrino
+        </span>
+      </div>
+      <h3>front-end developer</h3>
+
+      <div className={rightArrow} onClick={() => handleScrollToWork()}>
+        <Arrow />
+      </div>
+      <div className={bottomArrow} onClick={() => handleScrollToWork()} style={{transform: "rotate(90deg)"}}>
+        <Arrow />
       </div>
     </main>
   );
