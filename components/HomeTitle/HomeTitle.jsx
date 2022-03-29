@@ -6,9 +6,9 @@ import {
   homeTitle,
   rightArrow,
   bottomArrow
-} from '/styles/Home.module.scss'
+} from '/styles/Home.module.scss';
 
-const HomeTitle = () => {
+const HomeTitle = ({h3}) => {
   const [xPos, setXPos] = useState(0);
   const [yPos, setYPos] = useState(0);
 
@@ -31,7 +31,7 @@ const HomeTitle = () => {
           pierre pellegrino
         </span>
       </div>
-      <h3>front-end developer</h3>
+      <h3>{h3}</h3>
 
       <div className={rightArrow} onClick={() => handleScrollToWork()}>
         <Arrow />
