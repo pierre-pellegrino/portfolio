@@ -13,6 +13,7 @@ import {
   projectLink,
   paragraphPicturesWrapper,
   notableFeatures,
+  variousProjectLink
 } from '/styles/work_detail.module.scss';
 
 
@@ -26,7 +27,8 @@ const WorkDetailsPage = ({project}) => {
     link,
     tags,
     detailDesc,
-    features
+    features,
+    multiple
   } = project;
 
   return (
@@ -60,18 +62,20 @@ const WorkDetailsPage = ({project}) => {
     <div className={paragraph}>
       <div className={paragraphText}>
         <div  
-          dangerouslySetInnerHTML={{__html: detailDesc[0]}}
+          dangerouslySetInnerHTML={{__html: detailDesc}}
         />
 
         <div className={notableFeatures}>
-          <p>Notable features :</p>
+          {multiple ? <p>Projects list :</p> : <p>Notable features :</p>}
           <ul>
             {features.map((feature, i) => {
               return (
-                <>
-                
-                <li key={i}> <span> {i+1} </span> {feature} </li>
-                </>
+                <li key={i}> 
+                  <span> 
+                    {i+1} 
+                  </span> 
+                  {multiple ? <div className={variousProjectLink} dangerouslySetInnerHTML={{__html: feature}} /> : feature} 
+                </li>
               );
             })}
           </ul>

@@ -27,11 +27,11 @@
     display: block;
     width: 8px;
     height: 8px;
-    background-color: $grey;
+    background-color: $darkgrey;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $darkgrey;
+    background: $grey;
   }
 }
 
