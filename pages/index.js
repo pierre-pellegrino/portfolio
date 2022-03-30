@@ -5,7 +5,6 @@ import Work from '../components/Work/Work'
 import {
   globalWrapper,
   homeTitle,
-  fadeToWork
 } from '/styles/Home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';

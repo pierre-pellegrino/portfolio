@@ -10,8 +10,8 @@ const Navbar = ({cv, work}) => {
 
   return (
     <nav className={nav}>
-      <a href="#cv">{cv}</a>
-      <a href="#work" onClick={() => handleScrollWork()}>{work}</a>
+      <a>{cv}</a>
+      <a onClick={() => handleScrollWork()}>{work}</a>
     </nav>
   );
 };
