@@ -157,3 +157,20 @@
     font-size: 0.6em!important;
   }
 }
+
+.globalWrapper {
+  max-height: 100vh;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $title-color $background;  
+
+  &::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+    height: 8px;
+    background-color: $background;
+  }  
+  &::-webkit-scrollbar-thumb {
+    background: $title-color;
+  }
+}

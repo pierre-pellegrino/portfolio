@@ -2,6 +2,7 @@ import React from 'react';
 import {
   nav,
 } from "./navbar.module.scss";
+import Link from 'next/link';
 
 const Navbar = ({cv, work}) => {
   const handleScroll = (x,y) => {
@@ -10,7 +11,9 @@ const Navbar = ({cv, work}) => {
 
   return (
     <nav className={nav}>
-      <a onClick={() => handleScroll(0,window.innerHeight)}>{cv}</a>
+      <Link href="/resume">
+        <a>{cv}</a>
+      </Link>
       <a onClick={() => handleScroll(window.innerWidth,0)}>{work}</a>
     </nav>
   );

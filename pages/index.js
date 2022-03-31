@@ -2,15 +2,12 @@ import Head from 'next/head'
 import HomeTitle from '../components/HomeTitle/HomeTitle'
 import Navbar from '../components/HomeTitle/Navbar/Navbar'
 import Work from '../components/Work/Work'
-import PersonalInfos from '../components/PersonalInfos/PersonalInfos'
 import {
   globalWrapper,
-  personalWrapper,
   homeTitle,
 } from '/styles/Home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
-import { useEffect, useRef } from 'react'
 
 export default function Home(props) {
   const { t } = useTranslation('common');
