@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from "next/image";
 import TagsDisplay from './TagsDisplay/TagsDisplay';
+import Arrow from 'components//Arrow/Arrow';
 import {
   cusLink,
 } from 'components/HomeTitle/Navbar/navbar.module.scss';
@@ -13,23 +14,31 @@ import {
   projectLink,
   paragraphPicturesWrapper,
   notableFeatures,
-  variousProjectLink
+  variousProjectLink,
+  leftArrow,
+  iconsWrapper
 } from '/styles/work_detail.module.scss';
+import { useRouter } from "next/router";
+import { GithubIcon, WorldIcon } from '../Icons';
 
 
 const WorkDetailsPage = ({project}) => {
   const {
     name, 
-    description, 
-    picture, 
-    role, 
     detailImg,
     link,
+    github_link,
     tags,
     detailDesc,
     features,
     multiple
   } = project;
+
+  const router = useRouter();
+
+  const handleRedirectToHome = () => {
+    router.push('/');
+  }
 
   return (
     <>
@@ -40,69 +49,62 @@ const WorkDetailsPage = ({project}) => {
     </Head>
     <div className={workWrapper}>
     
-    <h1>{name}</h1>
-    {tags && (
-      <div className={tagsWrapper}>
-        <TagsDisplay tags={tags} />
-      </div>
-    )}
-
-    {link ?
-      (
-      <>
-        <p className={projectLink}>
-          website:
-          <a className={cusLink} href={`${link}`} target="_blank" rel="noreferrer">{name}</a>
-        </p>
-      </>
-      ) :
-      <p className={projectLink}>website: N/A</p>
-    }
-
-    <div className={paragraph}>
-      <div className={paragraphText}>
-        <div  
-          dangerouslySetInnerHTML={{__html: detailDesc}}
-        />
-
-        <div className={notableFeatures}>
-          {multiple ? <p>Projects list :</p> : <p>Notable features :</p>}
-          <ul>
-            {features.map((feature, i) => {
-              return (
-                <li key={i}> 
-                  <span> 
-                    {i+1} 
-                  </span> 
-                  {multiple ? <div className={variousProjectLink} dangerouslySetInnerHTML={{__html: feature}} /> : feature} 
-                </li>
-              );
-            })}
-          </ul>
+      <h1>{name}</h1>
+      {tags && (
+        <div className={tagsWrapper}>
+          <TagsDisplay tags={tags} />
         </div>
-        
+      )}
+
+      <div className={iconsWrapper}>
+        {link && <a className={cusLink} href={`${link}`} target="_blank" rel="noreferrer"><WorldIcon /></a> }
+        {github_link && <a className={cusLink} href={`${github_link}`} target="_blank" rel="noreferrer"><GithubIcon /></a> }
       </div>
 
-      <div className={paragraphPicturesWrapper}>
-        {detailImg.map((img,i) => {
-          return (
-            <div className={paragraphPicture} key={i}>
-              <Image
-                src={`/images/${img}`}
-                alt="work preview picture"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </div>
-          )
-        })}
-      </div>
+      <div className={paragraph}>
+        <div className={paragraphText}>
+          <div className={leftArrow} onClick={() => handleRedirectToHome()} style={{transform: "rotate(180deg)"}}>
+            <Arrow />
+          </div>
+          <div  
+            dangerouslySetInnerHTML={{__html: detailDesc}}
+          />
 
+          <div className={notableFeatures}>
+            {multiple ? <p>Projects demos :</p> : <p>Notable features :</p>}
+            <ul>
+              {features.map((feature, i) => {
+                return (
+                  <li key={i}> 
+                    <span> 
+                      {i+1} 
+                    </span> 
+                    {multiple ? <div className={variousProjectLink} dangerouslySetInnerHTML={{__html: feature}} /> : feature} 
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          
+        </div>
 
+        <div className={paragraphPicturesWrapper}>
+          {detailImg.map((img,i) => {
+            return (
+              <div className={paragraphPicture} key={i}>
+                <Image
+                  src={`/images/${img}`}
+                  alt="work preview picture"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                />
+              </div>
+            )
+          })}
+        </div>
+      </div>  
     </div>
-    
-  </div>
   </>
   );
 };

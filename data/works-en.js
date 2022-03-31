@@ -7,6 +7,7 @@ const works = [
     description: 'Social network that allows users to share their own code snippets or browse those created by people.',
     picture: 'snipshare_mockup.png',
     link: 'https://snipsha.re',
+    github_link: 'https://github.com/pierre-pellegrino/sharincode',
     detailImg: ['snipshare_create.gif', 'snipshare_comment.gif', 'snipshare_themes.gif'],
     tags: [
       'Sass',
@@ -25,6 +26,7 @@ const works = [
     description: "immolib is a service that helps you organizing real estate appointments and collecting your candidates files.",
     picture: 'immolib_mockup.png',
     link: 'https://immolib.herokuapp.com/',
+    github_link: 'https://github.com/pierre-pellegrino/Immolib',
     detailImg: ['immolib.png', 'immolib2.PNG', 'immolib3.PNG', 'immolib_form.gif'],
     tags: [
       'Ajax',
@@ -42,6 +44,7 @@ const works = [
     description: "Real estate marketplace.",
     picture: 'immocoin_mockup.png',
     link: 'https://immocoin.vercel.app/',
+    github_link: 'https://github.com/pierre-pellegrino/immocoin',
     detailImg: ['immocoin.png', 'immocoin3.png', 'immocoin4.png'],
     tags: [
       'Sass',

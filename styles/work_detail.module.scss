@@ -3,6 +3,8 @@
 .workWrapper {
   padding: 1rem;
   height: 100vh;
+  animation: appear 0.7s ease-out forwards;
+  -webkit-animation: appear 0.7s ease-out forwards;
 
   h1 {
     font-size: 2.8rem;
@@ -28,6 +30,7 @@
   .paragraphText {
     text-align: justify;
     max-width: 35%;
+    position: relative;
   }
 
   .paragraphPicture {
@@ -111,8 +114,54 @@
   -moz-transition: color 0.3s;
   -ms-transition: color 0.3s;
   -o-transition: color 0.3s;
-  
+
   &:hover {
     color: $primary!important;
   }
+}
+
+.leftArrow {
+  position: absolute;
+  left: 0rem;
+  top: -2rem;
+
+  span {
+    border: none;
+    padding: 0;
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0.75rem 0;
+  gap: 0.75rem;
+
+  a:after {
+    display: none;
+  }
+
+  svg {
+    width: 32px;
+    fill: white;
+    transition: fill 0.3s;
+    -webkit-transition: fill 0.3s;
+    -moz-transition: fill 0.3s;
+    -ms-transition: fill 0.3s;
+    -o-transition: fill 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      fill: $primary;
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+} 
+  to {
+    opacity: 1;
+  } 
 }
