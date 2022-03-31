@@ -30,7 +30,7 @@ export default function Home(props) {
           <HomeTitle h3={t('h3')}/>
       </div>
       <div>
-        <Work />
+        <Work locale={props._nextI18Next.initialLocale}/>
       </div>
     </div>
   )
