@@ -6,9 +6,11 @@ import {
 } from "./workcard.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from 'next-i18next';
 
 const WorkCard = ({project}) => {
   const { name, description, role, picture, slug } = project;
+  const { t } = useTranslation('common');
   return (
     <div className={workCard}>
       <Image
@@ -23,7 +25,7 @@ const WorkCard = ({project}) => {
 
         <p className={workDetails}>{description}</p>
         <Link href={`/${slug}`} className={workDetails}>
-          <a className={`${workDetails} ${btn}`}>See more</a>
+          <a className={`${workDetails} ${btn}`}>{t('workButton')}</a>
         </Link>
     </div>
   );

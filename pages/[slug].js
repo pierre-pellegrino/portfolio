@@ -4,9 +4,8 @@ import worksen from "data/works-en.js";
 import worksfr from "data/works-fr.js";
 import WorkDetailsPage from "components/WorkDetailsPage/WorkDetailsPage";
 
-export default function Home({project, locale}) {
+export default function Home({project}) {
   const { t } = useTranslation('common');
-  console.log(locale)
 
   return (
     <WorkDetailsPage project={project[0]}/>
@@ -15,12 +14,7 @@ export default function Home({project, locale}) {
 
 export async function getStaticPaths() {
   const locales = ['fr', 'en'];
-  // const paths = works.map(project => {
-  //   return {
-  //     params: { slug: `${project.slug}`},
-  //     locale:"fr",
-  //   }
-  // });
+
   const paths = worksen.map(project => {
     return {
       params: { slug: `${project.slug}`}

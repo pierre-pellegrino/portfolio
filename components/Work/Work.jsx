@@ -8,6 +8,7 @@ import {
 import worksen from "../../data/works-en.js";
 import worksfr from "../../data/works-fr.js";
 
+
 const Work = ({locale}) => {
   const handleScrollToHome = () => {
     window.scroll(0,0);
@@ -16,7 +17,7 @@ const Work = ({locale}) => {
   const works = locale == "fr" ? worksfr : worksen;
 
   return (
-    <div className={workWrapper}>      
+    <div className={workWrapper}>
       {works.map(project => {
         return (
           <WorkCard 
