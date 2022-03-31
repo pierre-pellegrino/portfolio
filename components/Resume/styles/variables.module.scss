@@ -1,0 +1,159 @@
+@import 'styles/variables.module';
+
+.resume .globalWrapper {
+
+  @media screen and (max-width: 1920px) {
+    .mainContent p, span, h3, h5 {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    .mainContent p, span {
+      font-family: "Montserrat";
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+      .profileItem i {
+        margin: 0 0.3em 0 0;
+      }
+  }
+  
+  @media screen and (max-width: 1100px) { 
+    .mb1 {
+      margin-bottom: 0.5em;
+    }
+  }
+  
+  @media screen and (max-width: 930px) {
+    body, #root {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .globalWrapper {
+      padding: 0.5em;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .mainContent {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 2em;
+  
+      div, section {
+        max-width: 90vw;
+        width: 90vw;
+      }
+    }
+  
+    h2 {
+      margin-top: 2em;
+    }
+  
+    h5 {
+      padding: 1em 0!important;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      white-space: normal;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .profileItem i {
+      margin: 0 1em 0 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0!important;
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+    body, #root {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 370px) {
+    h1 {
+      font-size: 1.6em;
+    }
+  
+    body, #root {
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+.resume {
+  .globalWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $background;
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color;
+    font-size: 18px!important;
+    padding: 1em 2em;
+  }
+  
+  .mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+  
+    div, section {
+     max-width: 40vw;
+    }
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: $title-color;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  
+  li {
+    list-style: none;
+  }  
+  
+  h1 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 0.5em;
+  }
+  
+  .mb1 {
+    margin-bottom: 0.5em;
+  }
+  
+  .tac {
+    text-align: center;
+  }
+  
+  .date {
+    color: $orange;
+    text-transform: uppercase;
+    margin: -0.5em 0 0;
+    font-size: 0.6em!important;
+  }
+}

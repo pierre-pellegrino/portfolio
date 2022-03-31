@@ -1,0 +1,40 @@
+@import 'styles/variables.module';
+
+.mainContentList {
+
+  &Subpart {
+    border-left: 4px solid $title-color;
+    padding: 0 0 0 1em;
+
+    p {
+      padding-bottom: 0.3em;
+    }
+  
+    h5 {
+      padding: 0.5em 0;
+      position: relative;
+      font-size: 0.6rem!important;
+  
+      &:before {
+        content: "";
+        position: absolute;
+        left: -1.07em;
+        top: 50%;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: $title-color;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+      }
+    }
+  
+  }
+}
