@@ -4,14 +4,14 @@ import {
 } from "./navbar.module.scss";
 
 const Navbar = ({cv, work}) => {
-  const handleScrollWork = () => {
-    window.scroll(window.innerWidth,0)
+  const handleScroll = (x,y) => {
+    window.scroll(x,y)
   }
 
   return (
     <nav className={nav}>
-      <a>{cv}</a>
-      <a onClick={() => handleScrollWork()}>{work}</a>
+      <a onClick={() => handleScroll(0,window.innerHeight)}>{cv}</a>
+      <a onClick={() => handleScroll(window.innerWidth,0)}>{work}</a>
     </nav>
   );
 };

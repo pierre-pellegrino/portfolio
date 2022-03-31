@@ -11,6 +11,12 @@ class MyDocument extends Document {
               as="font"
               crossOrigin=""
             />
+
+          <link 
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" 
+            rel="stylesheet"
+          /> 
+            
         </Head>
         <body>
           <Main />

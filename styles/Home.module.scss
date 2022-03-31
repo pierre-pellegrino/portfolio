@@ -3,7 +3,13 @@
 .globalWrapper {
   display: flex;
   height: 100vh;
+  max-height: 100vh;
   width: 100vw;
+  outline: none;
+}
+
+.personalWrapper {
+  outline: none;
 }
 
 .homeTitle {
@@ -42,4 +48,55 @@
 .bottomArrow {
   position: absolute;
   bottom: 2rem;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.textAnim {
+  margin-top: 0.5rem;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  max-height: 1.2rem;
+
+  ul {
+    list-style-type: none;
+    animation: languagesAnim 22s ease-in-out infinite;
+
+    li {
+      margin-bottom: 1rem;
+      margin-left: 2px;
+      color: $primary;
+      font-weight: 600;
+
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@keyframes languagesAnim {
+  0%,97.5%,100% {
+    transform: translateY(0);
+  }
+  7.5%, 10%, 87.5%, 90% {
+    transform: translateY(-52px);
+  }
+  17.5%, 20%, 77.5%, 80% {
+    transform: translateY(-104px);
+  }
+  27.5%, 30%, 67.5%, 70% {
+    transform: translateY(-156px);
+  }
+  37.5%, 40%, 57.5%, 60% {
+    transform: translateY(-208px);
+  }
+  47.5%, 50% {
+    transform: translateY(-260px);
+  }
 }

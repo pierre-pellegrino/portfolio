@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next';
-// import works from "data/works-en.js";
 import worksen from "data/works-en.js";
 import worksfr from "data/works-fr.js";
 import WorkDetailsPage from "components/WorkDetailsPage/WorkDetailsPage";

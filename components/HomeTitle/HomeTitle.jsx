@@ -5,15 +5,16 @@ import {
   titleShadow,
   homeTitle,
   rightArrow,
-  bottomArrow
+  subtitle,
+  textAnim
 } from '/styles/Home.module.scss';
 
 const HomeTitle = ({h3}) => {
   const [xPos, setXPos] = useState(0);
   const [yPos, setYPos] = useState(0);
 
-  const handleScrollToWork = () => {
-    window.scroll(window.innerWidth,0);
+  const handleScroll = (x,y) => {
+    window.scroll(x,y);
   }
 
   const handleMouseMove = (e) => {
@@ -31,12 +32,22 @@ const HomeTitle = ({h3}) => {
           pierre pellegrino
         </span>
       </div>
-      <h3>{h3}</h3>
-
-      <div className={rightArrow} onClick={() => handleScrollToWork()}>
-        <Arrow />
+      <p className={subtitle}>{h3}</p>
+      <div className={textAnim}>
+        <p>
+          I create websites using&nbsp;
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Sass</li>
+            <li>Javascript</li>
+            <li>ReactJS</li>
+            <li>NextJS</li>
+          </ul>
       </div>
-      <div className={bottomArrow} onClick={() => handleScrollToWork()} style={{transform: "rotate(90deg)"}}>
+
+      <div className={rightArrow} onClick={() => handleScroll(window.innerWidth,0)}>
         <Arrow />
       </div>
     </main>
