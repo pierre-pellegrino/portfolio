@@ -104,9 +104,9 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: $background;
+    background-color: $darkgrey;
     font-family: 'Montserrat', sans-serif;
-    color: $text-color;
+    color: #bbb;
     font-size: 18px!important;
     padding: 1em 2em;
   }
@@ -124,7 +124,7 @@
   
   h1, h2, h3, h4, h5 {
     font-family: 'Hammersmith One', sans-serif;
-    color: $title-color;
+    color: $primary;
     text-transform: uppercase;
     letter-spacing: 0.25em;
   }
@@ -151,7 +151,7 @@
   }
   
   .date {
-    color: $orange;
+    color: $yellow;
     text-transform: uppercase;
     margin: -0.5em 0 0;
     font-size: 0.6em!important;
@@ -173,4 +173,43 @@
   &::-webkit-scrollbar-thumb {
     background: $title-color;
   }
+}
+
+.resume.light {
+  .globalWrapper {
+    background-color: $background;
+    color: $text-color;
+
+    * {
+      border-left-color: $title-color!important;
+      border-bottom-color: $title-color!important;
+
+      &:before {
+        background-color: $title-color!important;
+      }
+    }
+
+    & div div {
+      span {
+        background-color: $title-color!important;
+      }
+    }
+
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $title-color;
+  }
+
+  svg {
+    fill: $title-color
+  }
+
+  .date {
+    color: $orange;
+    text-transform: uppercase;
+    margin: -0.5em 0 0;
+    font-size: 0.6em!important;
+  }
+
 }

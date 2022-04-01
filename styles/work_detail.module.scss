@@ -58,13 +58,13 @@
     padding: 0 0.5rem;
 
     scrollbar-width: thin;
-    scrollbar-color: $grey $darkgrey;  
+    scrollbar-color: $grey rgba(0,0,0,0.2);  
   
     &::-webkit-scrollbar {
       display: block;
       width: 6px;
       height: 8px;
-      background-color: $darkgrey;
+      background-color: rgba(0,0,0,0.2);
     }  
     &::-webkit-scrollbar-thumb {
       background: $grey;
@@ -98,10 +98,6 @@
           fill: $violet;
         }
       }
-    }
-
-    .tagsWrapper span {
-      border-color: #000;
     }
   }
 }

@@ -23,14 +23,14 @@
   }
 
   scrollbar-width: thin;
-  scrollbar-color: $darkgrey $grey;
+  scrollbar-color: $grey rgba(0,0,0,0.2);;
 
 
   &::-webkit-scrollbar {
     display: block;
     width: 8px;
     height: 8px;
-    background-color: $darkgrey;
+    background-color: rgba(0,0,0,0.2);;
   }
 
   &::-webkit-scrollbar-thumb {

@@ -3,7 +3,7 @@
 .mainContentList {
 
   &Subpart {
-    border-left: 4px solid $title-color;
+    border-left: 4px solid $primary;
     padding: 0 0 0 1em;
 
     p {
@@ -27,7 +27,7 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
-        background-color: $title-color;
+        background-color: $primary;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);

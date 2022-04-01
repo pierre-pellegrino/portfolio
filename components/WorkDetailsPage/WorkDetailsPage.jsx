@@ -18,10 +18,10 @@ import {
   iconsWrapper,
   light
 } from '/styles/work_detail.module.scss';
-import { useRouter } from "next/router";
 import { GithubIcon, WorldIcon } from '../Icons';
 import { useAtom } from 'jotai';
 import { lightTheme } from 'store';
+import Link from "next/link";
 
 const WorkDetailsPage = ({project}) => {
   const {
@@ -35,12 +35,6 @@ const WorkDetailsPage = ({project}) => {
     multiple
   } = project;
   const [theme] = useAtom(lightTheme);
-
-  const router = useRouter();
-
-  const handleRedirectToHome = () => {
-    router.push('/');
-  }
 
   return (
     <>
@@ -65,8 +59,10 @@ const WorkDetailsPage = ({project}) => {
 
       <div className={paragraph}>
         <div className={paragraphText}>
-          <div className={leftArrow} onClick={() => handleRedirectToHome()} style={{transform: "rotate(180deg)"}}>
-            <Arrow />
+          <div className={leftArrow} style={{transform: "rotate(180deg)"}}>
+            <Link href="/">
+              <a><Arrow /></a>
+            </Link>
           </div>
           <div  
             dangerouslySetInnerHTML={{__html: detailDesc}}

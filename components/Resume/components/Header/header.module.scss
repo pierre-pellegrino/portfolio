@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 1em;
-  border-bottom: 5px solid $title-color;
+  border-bottom: 5px solid $primary;
 
   &Informations {
     width: 100%;
@@ -21,6 +21,14 @@
   p {
     font-size: 0.7rem;
     font-family: "Montserrat", sans-serif;
+  }
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+  
+  span {
+    background-color: $primary;
   }
 }
 
