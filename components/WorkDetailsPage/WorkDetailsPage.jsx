@@ -11,16 +11,17 @@ import {
   paragraphPicture,
   paragraphText,
   tagsWrapper,
-  projectLink,
   paragraphPicturesWrapper,
   notableFeatures,
   variousProjectLink,
   leftArrow,
-  iconsWrapper
+  iconsWrapper,
+  light
 } from '/styles/work_detail.module.scss';
 import { useRouter } from "next/router";
 import { GithubIcon, WorldIcon } from '../Icons';
-
+import { useAtom } from 'jotai';
+import { lightTheme } from 'store';
 
 const WorkDetailsPage = ({project}) => {
   const {
@@ -33,6 +34,7 @@ const WorkDetailsPage = ({project}) => {
     features,
     multiple
   } = project;
+  const [theme] = useAtom(lightTheme);
 
   const router = useRouter();
 
@@ -47,7 +49,7 @@ const WorkDetailsPage = ({project}) => {
       <meta name="description" content={`${name} project detailed on Pierre Pellegrino's portfolio`} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <div className={workWrapper}>
+    <div className={`${theme && light} ${workWrapper}`}>
     
       <h1>{name}</h1>
       {tags && (

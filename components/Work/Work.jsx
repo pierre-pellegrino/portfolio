@@ -4,20 +4,23 @@ import WorkCard from '../WorkCard/WorkCard';
 import {
   workWrapper,
   leftArrow,
+  light
 } from "./work.module.scss";
 import worksen from "../../data/works-en.js";
 import worksfr from "../../data/works-fr.js";
+import { useAtom } from 'jotai';
+import { lightTheme } from 'store';
 
 
 const Work = ({locale}) => {
+  const [theme] = useAtom(lightTheme);
   const handleScrollToHome = () => {
     window.scroll(0,0);
   }
-
   const works = locale == "fr" ? worksfr : worksen;
 
   return (
-    <div className={workWrapper}>
+    <div className={`${theme && light} ${workWrapper}`}>
       {works.map(project => {
         return (
           <WorkCard 
