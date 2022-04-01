@@ -57,3 +57,42 @@
     background-color: #000;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .workWrapper {
+    padding-top: 3rem;
+  
+    div:nth-child(2n) {
+      margin-left: 0;
+    }
+  
+    div:nth-child(2n+1) {
+      margin-right: 0;
+    }
+  }
+
+  .leftArrow {
+    top: 1rem;
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .workWrapper {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .leftArrow {
+    left: 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .workWrapper {
+    padding: 3rem 0.25rem 0.25rem;
+  }
+
+  .leftArrow {
+    left: 0.25rem;
+  }
+}
