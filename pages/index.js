@@ -22,7 +22,6 @@ export default function Home(props) {
     e.key === "ArrowDown" && window.scroll(0, window.innerHeight);
     e.key === "ArrowUp" && window.scroll(0, 0);
   }
-
   return (
     <>
     <div className={`${globalWrapper} ${theme && light}`} tabIndex="0" onKeyDown={(e) => handleKeyDown(e)}>

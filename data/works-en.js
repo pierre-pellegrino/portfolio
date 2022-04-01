@@ -16,7 +16,9 @@ const works = [
       'Ruby On Rails'
     ],
     detailDesc:'<p>Snipshare is a social network created for developers.<br /> It lets you create your own snippets in more than 60 programming languages. <br /><br /> You can also browse snippets from users all around the world, add them to your favorites, comment on them, and share them on Twitter and Facebook.</p>',
-    features: ['Online Code Editor', 'Code Highlighter', 'Infinite Scroller', 'Like, comment, share', 'Github OAuth']
+    features: ['Online Code Editor', 'Code Highlighter', 'Infinite Scroller', 'Like, comment, share', 'Github OAuth'],
+    featuresText: 'Notable features:',
+    linkText: 'Links to project previews:'
   },
   {
     id: 2,
@@ -33,8 +35,10 @@ const works = [
       'Sass',
       'Ruby On Rails'
     ],
-    detailDesc:'<p>immolib is a service that helps you organizing real estate appointments and collecting your candidates files.<br /><br /> You can post your own property ad, set up your calendar with your time slots and let customers schedule appointments.<br /><br /> Customers are then able to send their real estate files online.</p>',
-    features: ['Online Calendar', 'Online documents storage', 'Automatic reminder emails', 'Online payment', 'Google OAuth']
+    detailDesc:'<p>immolib is a service that helps you organize real estate appointments and collect your candidates\' files.<br /><br /> You can post your own property ad, set up your calendar with your time slots and let customers schedule appointments.<br /><br /> Customers are then able to send their real estate files online.</p>',
+    features: ['Online Calendar', 'Online documents storage', 'Automatic reminder emails', 'Online payment', 'Google OAuth'],
+    featuresText: 'Notable features:',
+    linkText: 'Links to project previews:'
   },
   {
     id: 3,
@@ -52,8 +56,10 @@ const works = [
       'NextJS',
       'Ruby On Rails'
     ],
-    detailDesc:'<p>immocoin is a real estate marketplace.<br /><br /> After registering, you can browse property ads or create your own. If you find one interesting, you can access to its owner profile and contact him by email.<br/ ><br /> This was a training project made within one week.</p>',
-    features: ['Authentication', 'Ad management']
+    detailDesc:'<p>immocoin is a real estate marketplace.<br /><br /> After registering, you can browse property ads or create your own. If you find one interesting, you can access its owner profile and contact him by email.<br/ ><br /> This was a training project made within one week.</p>',
+    features: ['Authentication', 'Ad management'],
+    featuresText: 'Notable features:',
+    linkText: 'Links to project previews:'
   },
   {
     id: 4,
@@ -68,9 +74,11 @@ const works = [
       'CSS',
       'Javascript'
     ],
-    detailDesc:'<p>These are Front-End only projects, mostly made in a few hours with the help of Frontend Mentor website.</p>',
-    features: ["<a href='https://pierre-pellegrino.github.io/Project-36-FrontEndMentor/' target='_blank' rel='noreferrer'>Bookmark Manager</a>", "<a href='https://pierre-pellegrino.github.io/Project-39-FrontEndMentor/' target='_blank' rel='noreferrer'>Manage landing page</a>", "<a href='https://pierre-pellegrino.github.io/Project-33-FrontEndMentor/' target='_blank' rel='noreferrer'>Shortly</a>","<a href='https://pierre-pellegrino.github.io/facebook-homepage/' target='_blank' rel='noreferrer'>Facebook home integration</a>"],
-    multiple: true
+    detailDesc:'<p>These are Front-End only projects, mostly made in a few hours with the help of the Frontend Mentor website.</p>',
+    features: ["<a href='https://pierre-pellegrino.github.io/Project-36-FrontEndMentor/' target='_blank' rel='noreferrer'>Bookmark Manager</a>", "<a href='https://pierre-pellegrino.github.io/Project-39-FrontEndMentor/' target='_blank' rel='noreferrer'>Manage landing page</a>", "<a href='https://pierre-pellegrino.github.io/Project-33-FrontEndMentor/' target='_blank' rel='noreferrer'>Shortly</a>","<a href='https://pierre-pellegrino.github.io/facebook-homepage/' target='_blank' rel='noreferrer'>Facebook homepage integration</a>"],
+    multiple: true,
+    featuresText: 'Notable features:',
+    linkText: 'Links to project previews:'
   }
 ];
 

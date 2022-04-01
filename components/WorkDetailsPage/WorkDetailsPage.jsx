@@ -32,7 +32,9 @@ const WorkDetailsPage = ({project}) => {
     tags,
     detailDesc,
     features,
-    multiple
+    multiple,
+    linkText,
+    featuresText
   } = project;
   const [theme] = useAtom(lightTheme);
 
@@ -69,7 +71,7 @@ const WorkDetailsPage = ({project}) => {
           />
 
           <div className={notableFeatures}>
-            {multiple ? <p>Projects demos :</p> : <p>Notable features :</p>}
+            {multiple ? <p>{linkText}</p> : <p>{featuresText}</p>}
             <ul>
               {features.map((feature, i) => {
                 return (
