@@ -32,7 +32,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={homeTitle}>
-          <Navbar cv={t('cv')} work={t('work')}/>
+          <Navbar cv={t('cv')} work={t('work')} language={t('language')}/>
           <HomeTitle h3={t('h3')}/>
       </div>
       <div>

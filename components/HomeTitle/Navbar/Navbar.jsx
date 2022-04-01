@@ -1,20 +1,22 @@
 import React from 'react';
 import {
   nav,
-  toggleSwitch
+  toggles
 } from "./navbar.module.scss";
 import Link from 'next/link';
 import ThemeSwitcher from 'components/ThemeSwitcher/ThemeSwitcher';
+import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 
-const Navbar = ({cv, work}) => {
+const Navbar = ({cv, work, language}) => {
   const handleScroll = (x,y) => {
     window.scroll(x,y)
   }
 
   return (
     <nav className={nav}>
-      <div className={toggleSwitch}>
+      <div className={toggles}>
         <ThemeSwitcher />
+        <LanguageSwitcher lang={language} />
       </div>
       <Link href="/resume">
         <a>{cv}</a>

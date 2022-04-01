@@ -1,6 +1,7 @@
-// {
-//   "h3": "Developpeur Front-End",
-//   "cv": "cv",
-//   "work": "mes projets",
-//   "workButton": "Détails"
-// }
+{
+  "language":"fr",
+  "h3": "Developpeur Front-End",
+  "cv": "cv",
+  "work": "mes projets",
+  "workButton": "Détails"
+}
