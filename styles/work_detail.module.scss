@@ -2,7 +2,7 @@
 
 .workWrapper {
   padding: 1rem;
-  height: 100vh;
+  min-height: 100vh;
   animation: appear 0.7s ease-out forwards;
   -webkit-animation: appear 0.7s ease-out forwards;
 
@@ -25,6 +25,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 100%;
   }
 
   .paragraphText {
@@ -48,7 +49,7 @@
   }
 
   .paragraphPicturesWrapper {
-    max-width: 50%;
+    max-width: 55%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -130,6 +131,7 @@
     margin: 1rem 0 0.25rem 1rem;
     list-style-type: none;
     position: relative;
+    text-align: left;
   }
 }
 
@@ -189,4 +191,62 @@
   to {
     opacity: 1;
   } 
+}
+
+@media screen and (max-width: 1265px) {
+  .workWrapper {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .workWrapper {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .workWrapper {
+    .paragraph {
+      flex-direction: column;
+    }
+
+    .paragraphText {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .paragraphPicturesWrapper {
+      flex-direction: row;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .paragraphPicture {
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .workWrapper {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .paragraphPicture {
+    min-height: 300px!important;
+  }
+
+  .tagsWrapper {
+    flex-wrap: wrap;
+  }
 }

@@ -15,7 +15,7 @@ const works = [
       'NextJS',
       'Ruby On Rails'
     ],
-    detailDesc:'Snipshare est un réseau social pensé pour les développeurs.<br /> Il vous permet de créer vos propres snippets de code dans plus de 60 langages de programmation différents. <br /><br /> Vous pouvez également voir les snippets des autres utilisateurs, les ajouter à vos favoris, les commenter, et les partager sur Twitter et Facebook.',
+    detailDesc:'<p>Snipshare est un réseau social pensé pour les développeurs.<br /> Il vous permet de créer vos propres snippets de code dans plus de 60 langages de programmation différents. <br /><br /> Vous pouvez également voir les snippets des autres utilisateurs, les ajouter à vos favoris, les commenter, et les partager sur Twitter et Facebook.</p>',
     features: ['Éditeur de code intégré', 'Mise en forme du code', 'Scroll infini', 'Réagissez, commentez, partagez', 'Github OAuth']
   },
   {
@@ -33,7 +33,7 @@ const works = [
       'Sass',
       'Ruby On Rails'
     ],
-    detailDesc:'immolib est un service qui aide les propriétaires à organiser leurs rendez-vous immobiliers et à récupérer les dossiers des candidats.<br /><br /> En tant que propriétaire, vous pouvez ajouter une annonce pour votre logement et créer un calendrier avec vos créneaux de disponibilité sur lesquels vos candidats s\'inscriront.<br /><br /> Les candidats peuvent vous envoyer leur dossier d\'achat ou de location sur notre espace sécurisé.',
+    detailDesc:'<p>immolib est un service qui aide les propriétaires à organiser leurs rendez-vous immobiliers et à récupérer les dossiers des candidats.<br /><br /> En tant que propriétaire, vous pouvez ajouter une annonce pour votre logement et créer un calendrier avec vos créneaux de disponibilité sur lesquels vos candidats s\'inscriront.<br /><br /> Les candidats peuvent vous envoyer leur dossier d\'achat ou de location sur notre espace sécurisé.</p>',
     features: ['Calendrier intégré', 'Stockage sécurisé', 'Mails de relance automatiques', 'Paiement en ligne', 'Google OAuth']
   },
   {
@@ -52,7 +52,7 @@ const works = [
       'NextJS',
       'Ruby On Rails'
     ],
-    detailDesc:'immocoin est une plateforme de vente immobilière.<br /><br /> Après inscription, vous pourrez chercher parmi les différentes annonces ou bien créer la votre. Si une offre vous intéresse, vous pourrez contacter son propriétaire par mail via son espace profil. <br /><br /> Ce projet est un entraînement réalisé en une semaine.',
+    detailDesc:'<p>immocoin est une plateforme de vente immobilière.<br /><br /> Après inscription, vous pourrez chercher parmi les différentes annonces ou bien créer la votre. Si une offre vous intéresse, vous pourrez contacter son propriétaire par mail via son espace profil. <br /><br /> Ce projet est un entraînement réalisé en une semaine.</p>',
     features: ['Authentification', 'Gestion d\'annonces']
   },
   {
@@ -68,7 +68,7 @@ const works = [
       'CSS',
       'Javascript'
     ],
-    detailDesc:'Ces projets ne comportent que la partie Front-End. La plupart ont été réalisés en quelques heures et sont des projets du site Frontend Mentor.',
+    detailDesc:'<p>Ces projets ne comportent que la partie Front-End. La plupart ont été réalisés en quelques heures et sont des projets du site Frontend Mentor.</p>',
     features: ["<a href='https://pierre-pellegrino.github.io/Project-36-FrontEndMentor/' target='_blank' rel='noreferrer'>Bookmark Manager</a>", "<a href='https://pierre-pellegrino.github.io/Project-39-FrontEndMentor/' target='_blank' rel='noreferrer'>Manage</a>", "<a href='https://pierre-pellegrino.github.io/Project-33-FrontEndMentor/' target='_blank' rel='noreferrer'>Shortly</a>","<a href='https://pierre-pellegrino.github.io/facebook-homepage/' target='_blank' rel='noreferrer'>Page d'accueil Facebook</a>"],
     multiple: true
   }
