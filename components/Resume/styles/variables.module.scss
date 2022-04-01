@@ -162,16 +162,16 @@
   max-height: 100vh;
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: $title-color $background;  
+  scrollbar-color: $primary $darkgrey;  
 
   &::-webkit-scrollbar {
     display: block;
     width: 6px;
     height: 8px;
-    background-color: $background;
+    background-color: $darkgrey;
   }  
   &::-webkit-scrollbar-thumb {
-    background: $title-color;
+    background: $primary;
   }
 }
 
@@ -193,6 +193,13 @@
       span {
         background-color: $title-color!important;
       }
+    }
+    scrollbar-color: $title-color $background; 
+    &::-webkit-scrollbar {
+      background-color: $background;
+    }  
+    &::-webkit-scrollbar-thumb {
+      background: $title-color;
     }
 
   }

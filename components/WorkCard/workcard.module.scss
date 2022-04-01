@@ -58,13 +58,13 @@
   }
 
   &:hover h3, &:hover h3+p, &:hover h3+p+a {
-    animation: appear 0.5s forwards ease-out;
-    -webkit-animation: appear 0.5s forwards ease-out;
+    animation: appear 0.3s forwards ease-out;
+    -webkit-animation: appear 0.3s forwards ease-out;
   }
 
   &:hover .workDetails {
-    animation: appear 0.5s 0.3s forwards ease-out;
-    -webkit-animation: appear 0.5s 0.3s forwards ease-out;
+    animation: appear 0.3s 0.2s forwards ease-out;
+    -webkit-animation: appear 0.3s 0.2s forwards ease-out;
   }
 }
 

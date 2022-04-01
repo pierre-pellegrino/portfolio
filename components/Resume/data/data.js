@@ -5,7 +5,7 @@ const data = {
     {
       name: `phone`,
       icon: <PhoneIcon />,
-      content: `06 99 46 14 86`
+      content: `+33 6 99 46 14 86`
     },
     {
       name: `email`,

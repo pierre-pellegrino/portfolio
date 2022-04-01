@@ -12,7 +12,7 @@ const LanguageSwitcher = ({lang}) => {
 
   return (
     <Link href="/" locale={newLang}>
-      <a><p className={title} onClick={() => handleFavLanguage()}>{newLang}</p></a>
+      <a><p className={title} onClick={() => handleFavLanguage()}>{lang}</p></a>
     </Link>
   );
 };
