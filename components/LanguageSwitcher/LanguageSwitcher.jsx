@@ -5,10 +5,14 @@ import {
 import Link from "next/link";
 
 const LanguageSwitcher = ({lang}) => {
+  const newLang = lang == "fr" ? "en" : "fr";
+  const handleFavLanguage = () => {
+    localStorage.setItem("pp-language", newLang)
+  }
 
   return (
-    <Link href="/" locale={`${lang == "fr" ? "en" : "fr"}`}>
-      <a><p className={title}>{lang == "fr" ? "EN" : "FR"}</p></a>
+    <Link href="/" locale={newLang}>
+      <a><p className={title} onClick={() => handleFavLanguage()}>{newLang}</p></a>
     </Link>
   );
 };

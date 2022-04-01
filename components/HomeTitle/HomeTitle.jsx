@@ -9,7 +9,7 @@ import {
   textAnim
 } from '/styles/Home.module.scss';
 
-const HomeTitle = ({h3}) => {
+const HomeTitle = ({h3, subtext}) => {
   const [xPos, setXPos] = useState(0);
   const [yPos, setYPos] = useState(0);
 
@@ -35,7 +35,7 @@ const HomeTitle = ({h3}) => {
       <p className={subtitle}>{h3}</p>
       <div className={textAnim}>
         <p>
-          I create websites using&nbsp;
+          {subtext}&nbsp;
         </p>
         <ul>
             <li>HTML</li>

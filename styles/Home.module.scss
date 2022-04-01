@@ -97,6 +97,18 @@
   }
 }
 
+.light {
+  h1, h2, h3, p, a {
+    & ::-moz-selection {
+      background: $violet;
+    }
+  
+    &::selection {
+      background: $violet;
+    }
+  }
+}
+
 @keyframes languagesAnim {
   0%,97.5%,100% {
     transform: translateY(0);

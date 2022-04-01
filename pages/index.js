@@ -33,7 +33,7 @@ export default function Home(props) {
       </Head>
       <div className={homeTitle}>
           <Navbar cv={t('cv')} work={t('work')} language={t('language')}/>
-          <HomeTitle h3={t('h3')}/>
+          <HomeTitle h3={t('h3')} subtext={t('subtitle')}/>
       </div>
       <div>
         <Work locale={props._nextI18Next.initialLocale}/>
