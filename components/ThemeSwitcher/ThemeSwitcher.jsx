@@ -15,15 +15,6 @@ const ThemeSwitcher = () => {
     setTheme(!theme);
   }
 
-  useEffect(() => {
-    if (localStorage.getItem("pp-theme") === "true") {
-      setTheme(true);
-    }
-    else {
-      setTheme(false);
-    }
-  }, [])
-
   return (
     <label className={sliderSwitch}>
       <input type="checkbox" onChange={() => handleThemeSwitch()} checked={theme}/>

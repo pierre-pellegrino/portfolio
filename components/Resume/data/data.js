@@ -10,7 +10,7 @@ const data = {
     {
       name: `email`,
       icon: <MailIcon />,
-      content: `pierre.pellegrino@laposte.net`
+      content: `pierre.pellegrino.dev@gmail.com`
     },
     {
       name: `address`,
@@ -40,6 +40,7 @@ const data = {
           `Javascript / ReactJS / NextJS`,
           `Ruby / Ruby on Rails`,
           `Bases de données (SQLite, PostgreSQL)`,
+          `Git / Git Flow / Github`,
           `Méthode agile`
         ]
       },
