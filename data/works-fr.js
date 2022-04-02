@@ -74,7 +74,7 @@ const works = [
       'CSS',
       'Javascript'
     ],
-    detailDesc:'<p>Ces projets ne comportent que la partie Front-End. La plupart ont été réalisés en quelques heures et sont des projets du site Frontend Mentor.</p>',
+    detailDesc:'<p>Ces projets ont été réalisés pour me perfectionner en Front-End et intégration web. La plupart ont été effectués en quelques heures et sont des projets proposés par le site Frontend Mentor.</p>',
     features: ["<a href='https://pierre-pellegrino.github.io/Project-36-FrontEndMentor/' target='_blank' rel='noreferrer'>Bookmark Manager</a>", "<a href='https://pierre-pellegrino.github.io/Project-39-FrontEndMentor/' target='_blank' rel='noreferrer'>Manage</a>", "<a href='https://pierre-pellegrino.github.io/Project-33-FrontEndMentor/' target='_blank' rel='noreferrer'>Shortly</a>","<a href='https://pierre-pellegrino.github.io/facebook-homepage/' target='_blank' rel='noreferrer'>Page d'accueil Facebook</a>"],
     multiple: true,
     featuresText: 'Caractéristiques principales :',
