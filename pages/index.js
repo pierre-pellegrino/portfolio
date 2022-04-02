@@ -16,11 +16,16 @@ export default function Home(props) {
   const { t } = useTranslation('common');
   const [theme, setTheme] = useAtom(lightTheme);
   const handleKeyDown = (e) => {
-    e.preventDefault();
-    e.key === "ArrowRight" && window.scroll(window.innerWidth, 0);
-    e.key === "ArrowLeft" && window.scroll(0,0);
-    e.key === "ArrowDown" && window.scroll(0, window.innerHeight);
-    e.key === "ArrowUp" && window.scroll(0, 0);
+    switch (e.key) {
+      case 'ArrowRight':
+        e.preventDefault();
+        window.scroll(window.innerWidth, 0);
+        break;
+      case 'ArrowLeft':
+        window.scroll(0, 0);
+        e.preventDefault();
+        break;
+    }
   }
   return (
     <>

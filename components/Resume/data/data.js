@@ -26,7 +26,7 @@ const data = {
   profile: {
     title: `profil`,
     content: [
-      `Fort de mes connaissances concernant les nouvelles technologies et de mon expérience dans le commerce et la relation clientèle, je possède les capacités d'adaptation et la motivation nécessaires pour mener à bien les missions qui me sont confiées.`
+      `Développeur web orienté Front-End avec notamment ReactJS/NextJS, j’ai également le sens de l’analyse du besoin client et de l’expérience en gestion d’équipe. Motivé par l’acquisition permanente de nouvelles connaissances, je suis à la recherche d’une entreprise dans laquelle m’épanouir sur le long-terme.`
     ]
   },
   skills: {
@@ -38,9 +38,9 @@ const data = {
           `HTML`,
           `CSS / Sass`,
           `Javascript / ReactJS / NextJS`,
-          `Ruby / Ruby On Rails`,
+          `Ruby / Ruby on Rails`,
           `Bases de données (SQLite, PostgreSQL)`,
-          `Méthode agile / Design Patterns`
+          `Méthode agile`
         ]
       },
       {
@@ -55,7 +55,7 @@ const data = {
         title: `Diverses`,
         content: [
           `Maîtrise de l'anglais`,
-          `Titulaire du permis B`
+          `Titulaire du permis B - Véhiculé`
         ]
       }
     ]
@@ -64,25 +64,48 @@ const data = {
     title: `expérience professionnelle`,
     content: [
       {
-        title: `Responsable Point de vente`,
+        title: `Snipshare`,
+        date: `mars 2022`,
+        content: [
+          `Création d'un réseau social pensé pour les développeurs`, 
+          `Front-End : React, Next, Sass`, 
+          `Back-End : API Ruby on Rails, PostgreSQL`,
+        ],
+        hidden: false
+      },
+      {
+        title: `immolib`,
+        date: `décembre 2021`,
+        content: [
+          `Création d'un site de gestion de visites immobilières et de collecte de dossiers candidats`, 
+          `Front-End : HTML, ERB, Javascript/Ajax, Sass`, 
+          `Back-End : Ruby on Rails, PostgreSQL`,
+        ],
+        hidden: false
+      },
+      {
+        title: `Responsable commercial`,
         date: `mars 2019 - février 2021`,
         content: [
-          `Réseau Club Bouygues Télécom`
-        ]
+          `Réseau Club Bouygues Télécom`,
+        ],
+        hidden: false
       },
       {
         title: `Conseiller Commercial`,
         date: `novembre 2016 - mars 2019`,
         content: [
           `Réseau Club Bouygues Télécom`
-        ]
+        ],
+        hidden: true
       },
       {
         title: `Conseiller Commercial`,
         date: `novembre 2015 - août 2016`,
         content: [
           `Espace SFR`
-        ]
+        ],
+        hidden: true
       }
     ]
   },
@@ -116,7 +139,6 @@ const data = {
   hobbies: {
     title: `loisirs`,
     content: [
-      `Nouvelles Technologies`,
       `Sport`,
       `Films, séries`,
       `Jeux vidéo`,

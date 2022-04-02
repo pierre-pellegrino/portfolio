@@ -14,14 +14,15 @@ const MainContentList = ({title, content}) => {
 
       {content.map((entry, key) => {
         return (
-          <div key={key} className={mainContentListSubpart}>
-            <h5>{entry.title}</h5>
-            {entry.date && <p className={date}>{entry.date}</p>}
-            {entry.content.map((item, index) => {
-              return <p key={index}>{item}</p>
-            })}
-          </div>
-
+          !entry.hidden && (
+            <div key={key} className={mainContentListSubpart}>
+              <h5>{entry.title}</h5>
+              {entry.date && <p className={date}>{entry.date}</p>}
+              {entry.content.map((item, index) => {
+                return <p key={index}>{item}</p>
+              })}
+            </div>
+          )
         )
       })}
 
