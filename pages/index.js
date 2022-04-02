@@ -11,6 +11,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { useAtom } from 'jotai';
 import { lightTheme } from 'store';
+import ContactMe from "components/ContactMe/ContactMe";
 
 export default function Home(props) {
   const { t } = useTranslation('common');
@@ -38,6 +39,7 @@ export default function Home(props) {
       <div className={homeTitle}>
           <Navbar cv={t('cv')} work={t('work')} language={t('language')}/>
           <HomeTitle h3={t('h3')} subtext={t('subtitle')}/>
+          <ContactMe />
       </div>
       <div>
         <Work locale={props._nextI18Next.initialLocale}/>

@@ -38,6 +38,15 @@
   .rightArrow span {
       background-color: #000;
   }
+
+  svg {
+    fill: #000;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: $violet;
+    }
+  }
 }
 
 .titleWrapper {
