@@ -160,5 +160,10 @@
 @media screen and (max-width: 600px) {
   .workCard {
     width: 100%;
+
+    h3 + p {
+      margin: 0 0 0.75rem;
+      font-size: 0.8rem;
+    }
   }
 }

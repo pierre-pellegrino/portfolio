@@ -5,8 +5,7 @@ import Work from '../components/Work/Work'
 import {
   globalWrapper,
   homeTitle,
-  light,
-  mobileTitle
+  light
 } from '/styles/Home.module.scss';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
@@ -14,7 +13,6 @@ import { useAtom } from 'jotai';
 import { lightTheme } from 'store';
 import ContactMe from "components/ContactMe/ContactMe";
 import { isMobile } from 'react-device-detect';
-import { useEffect } from 'react';
 
 export default function Home(props) {
 

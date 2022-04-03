@@ -8,6 +8,7 @@ import {
   subtitle,
   textAnim
 } from '/styles/Home.module.scss';
+import { isMobile } from 'react-device-detect';
 
 const HomeTitle = ({h3, subtext}) => {
   const [xPos, setXPos] = useState(0);
@@ -48,7 +49,7 @@ const HomeTitle = ({h3, subtext}) => {
       </div>
 
       <div className={rightArrow} onClick={() => handleScroll(window.innerWidth,0)}>
-        <Arrow />
+        {!isMobile && <Arrow />}
       </div>
     </main>
   );
