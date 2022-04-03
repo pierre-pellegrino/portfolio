@@ -43,7 +43,6 @@ const WorkDetailsPage = ({project}) => {
     <Head>
       <title>{name} | Pierre Pellegrino</title>
       <meta name="description" content={`${name} project detailed on Pierre Pellegrino's portfolio`} />
-      <link rel="icon" href="/favicon.ico" />
     </Head>
     <div className={`${theme && light} ${workWrapper}`}>
     
