@@ -14,8 +14,10 @@ import { useAtom } from 'jotai';
 import { lightTheme } from 'store';
 import ContactMe from "components/ContactMe/ContactMe";
 import { isMobile } from 'react-device-detect';
+import { useEffect } from 'react';
 
 export default function Home(props) {
+
   const { t } = useTranslation('common');
   const [theme, setTheme] = useAtom(lightTheme);
   const handleKeyDown = (e) => {
@@ -39,10 +41,10 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.svg" />
         {isMobile && <style>html, body {`{overflow: hidden;}`}</style>}
       </Head>
-      <div className={`${homeTitle} ${isMobile && mobileTitle}`}>
+      <div className={homeTitle}>
           <Navbar cv={t('cv')} work={t('work')} language={t('language')} mobile={isMobile}/>
           <HomeTitle h3={t('h3')} subtext={t('subtitle')}/>
-          <ContactMe />
+          <ContactMe mobile={isMobile}/>
       </div>
       <div>
         <Work locale={props._nextI18Next.initialLocale}/>
