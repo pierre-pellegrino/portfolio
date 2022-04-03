@@ -3,16 +3,17 @@ import {
   workCard,
   btn,
   workDetails,
+  mobileCard
 } from "./workcard.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from 'next-i18next';
 
-const WorkCard = ({project}) => {
+const WorkCard = ({project, mobile}) => {
   const { name, description, role, picture, slug } = project;
   const { t } = useTranslation('common');
   return (
-    <div className={workCard}>
+    <div className={`${workCard} ${mobile && mobileCard}`}>
       <Image
         src={`/images/${picture}`}
         alt="work preview picture"

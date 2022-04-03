@@ -66,6 +66,21 @@
     animation: appear 0.3s 0.2s forwards ease-out;
     -webkit-animation: appear 0.3s 0.2s forwards ease-out;
   }
+
+  &.mobileCard {
+    h3, p, a, .workDetails {
+      animation: appear 0.2s forwards;
+    }
+
+    & img{
+      opacity: 0.3;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+    }
+  }
 }
 
 .btn {

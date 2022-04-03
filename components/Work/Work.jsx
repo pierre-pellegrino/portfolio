@@ -27,6 +27,7 @@ const Work = ({locale, mobile}) => {
           <WorkCard 
             key={project.id}
             project={project}
+            mobile={mobile}
           />
         )
       })}
