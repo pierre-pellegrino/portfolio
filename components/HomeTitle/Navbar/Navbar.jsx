@@ -7,7 +7,7 @@ import Link from 'next/link';
 import ThemeSwitcher from 'components/ThemeSwitcher/ThemeSwitcher';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 
-const Navbar = ({cv, work, language}) => {
+const Navbar = ({cv, work, language, mobile}) => {
   const handleScroll = (x,y) => {
     window.scroll(x,y)
   }
@@ -21,7 +21,14 @@ const Navbar = ({cv, work, language}) => {
       <Link href="/resume">
         <a>{cv}</a>
       </Link>
-      <a onClick={() => handleScroll(window.innerWidth,0)}>{work}</a>
+
+      {mobile ? (
+        <Link href="/my-work">
+          <a>{work}</a>
+        </Link>
+      ) : (
+        <a onClick={() => handleScroll(window.innerWidth,0)}>{work}</a>
+      )}
     </nav>
   );
 };
