@@ -16,9 +16,18 @@ html, body {
   height: 100%;
 }
 
-html, body {
+//Workaround
+body {
+  min-height: 100vh;
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
+}
+html {
+  height: fill-available;
   height: -webkit-fill-available;
 }
+// /Workaround
 
 @font-face {
   font-family: "Sequel";
