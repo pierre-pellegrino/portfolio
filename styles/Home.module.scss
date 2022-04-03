@@ -6,7 +6,6 @@
   max-height: 100vh;
   width: 100vw;
   outline: none;
-  // overflow-y: hidden;
 }
 
 .homeTitle {
@@ -105,6 +104,10 @@
       }
     }
   }
+}
+
+.mobileIcons {
+  margin-bottom: 1rem;
 }
 
 .light {

@@ -16,6 +16,10 @@ html, body {
   height: 100%;
 }
 
+html, body {
+  height: -webkit-fill-available;
+}
+
 @font-face {
   font-family: "Sequel";
   src: url("/fonts/Sequel_Demo.ttf");
