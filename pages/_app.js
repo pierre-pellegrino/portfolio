@@ -6,7 +6,7 @@ import { lightTheme } from 'store';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
-  const [_, setTheme] = useAtom(lightTheme);
+  const [theme, setTheme] = useAtom(lightTheme);
 
   useEffect(() => {
     if (localStorage.getItem("pp-theme") === "true") {
@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content={`${theme ? "#1D1D1D" : "#DBDBDB"}`} />
       </Head>
       <Component {...pageProps} />
     </>
