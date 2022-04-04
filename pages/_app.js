@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content={`${theme ? "#1D1D1D" : "#DBDBDB"}`} />
+        <meta name="theme-color" content={`${theme ? "#DBDBDB" : "#1D1D1D" }`} />
       </Head>
       <Component {...pageProps} />
     </>
