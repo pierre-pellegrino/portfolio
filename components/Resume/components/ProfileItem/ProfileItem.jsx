@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   profileItem,
-  itemIcon
 } from './profile-item.module.scss';
 
 const ProfileItem = ({icon, content}) => {

@@ -25,9 +25,7 @@
 }
 
 .leftArrow {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
+  align-self: flex-start;
   transform: rotate(180deg);
   
   span {

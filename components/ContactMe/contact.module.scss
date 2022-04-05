@@ -20,3 +20,12 @@
 .searchbarPlaceholder {
   height: 2rem;
 }
+
+.legalNotice {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.8);
+
+  &:hover {
+    color: $primary;
+  }
+}
