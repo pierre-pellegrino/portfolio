@@ -2,7 +2,6 @@
 
 .resume .globalWrapper {
 
-  @media screen and (max-width: 1920px) {
     .mainContent p, span, h3, h5 {
       font-size: 18px;
     }
@@ -14,7 +13,6 @@
     .mainContent p, span {
       font-family: "Montserrat";
     }
-  }
 
   @media screen and (max-width: 1300px) {
       .profileItem i {

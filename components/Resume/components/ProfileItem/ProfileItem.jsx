@@ -8,7 +8,7 @@ const ProfileItem = ({icon, content}) => {
   return (
       <li className={profileItem}>
         <span>{icon}</span> 
-        <p>{content}</p>
+        <div dangerouslySetInnerHTML={{__html: content}} />
       </li>
   );
 };

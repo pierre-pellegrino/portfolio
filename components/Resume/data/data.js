@@ -10,7 +10,7 @@ const data = {
     {
       name: `email`,
       icon: <MailIcon />,
-      content: `pierre.pellegrino.dev@gmail.com`
+      content: `<a href="mailto:pierre.pellegrino.dev@gmail.com" rel="noreferrer" target="_blank">pierre.pellegrino.dev@gmail.com</a>`
     },
     {
       name: `address`,
@@ -20,7 +20,7 @@ const data = {
     {
       name: `github`,
       icon: <GithubIcon />,
-      content: `pierre-pellegrino`
+      content: `<a href="https://github.com/pierre-pellegrino" rel="noreferrer" target="_blank">pierre-pellegrino</a>`
     }
   ],
   profile: {
@@ -33,7 +33,7 @@ const data = {
     title: `compétences`,
     content: [
       {
-        title: `Informatiques`,
+        title: `Développement`,
         content: [
           `HTML`,
           `CSS / Sass`,
@@ -46,7 +46,7 @@ const data = {
         ]
       },
       {
-        title: `Commerciales et Managériales`,
+        title: `Relation client et Management`,
         content: [
           `Identification du besoin client`,
           `Gestion d'une équipe`,
@@ -63,7 +63,7 @@ const data = {
     ]
   },
   experience: {
-    title: `expérience professionnelle`,
+    title: `expériences professionnelles`,
     content: [
       {
         title: `Snipshare`,
