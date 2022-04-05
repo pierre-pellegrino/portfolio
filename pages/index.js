@@ -42,7 +42,7 @@ export default function Home(props) {
       <div className={homeTitle}>
           <Navbar cv={t('cv')} work={t('work')} language={t('language')} mobile={isMobile}/>
           <HomeTitle h3={t('h3')} subtext={t('subtitle')}/>
-          <ContactMe mobile={isMobile}/>
+          <ContactMe mobile={isMobile} legalNotice={t('legalNotice')}/>
       </div>
       <div>
         <Work locale={props._nextI18Next.initialLocale}/>

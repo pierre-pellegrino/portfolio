@@ -2,7 +2,7 @@ import React from 'react';
 import {
   contactWrapper,
   searchbarPlaceholder,
-  legalNotice
+  legalNotice as legalNoticeStyle
 } from "./contact.module.scss";
 import {
   GithubIcon,
@@ -10,7 +10,7 @@ import {
   MailIcon,
 } from "components/Icons";
 import Link from 'next/link';
-const ContactMe = ({mobile}) => {
+const ContactMe = ({mobile, legalNotice}) => {
   return (
     <>
     <div className={contactWrapper}>
@@ -19,7 +19,7 @@ const ContactMe = ({mobile}) => {
       <a href="mailto:pierre.pellegrino.dev@gmail.com" rel="noreferrer" target="_blank"><MailIcon /></a>
     </div>
     <Link href="/legal-notice">
-      <a className={legalNotice}>Mentions légales</a>
+      <a className={legalNoticeStyle}>{legalNotice}</a>
     </Link>
     {mobile && <div className={searchbarPlaceholder}></div>}
     </>
