@@ -22,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content={`${theme ? "#DBDBDB" : "#1D1D1D" }`} />
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" />
       </Head>
       <Component {...pageProps} />
     </>
