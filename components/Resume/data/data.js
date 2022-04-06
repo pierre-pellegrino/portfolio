@@ -26,7 +26,7 @@ const data = {
   profile: {
     title: `profil`,
     content: [
-      `Développeur web orienté Front-End avec notamment ReactJS/NextJS, j’ai le sens de l’analyse du besoin client et de l’expérience en gestion d’équipe. Motivé par l’acquisition permanente de nouvelles connaissances, je suis à la recherche d’une entreprise dans laquelle m’épanouir sur le long-terme.`
+      `Développeur web orienté Front-End avec notamment ReactJS/NextJS, j’ai le sens de l’analyse du besoin client et deux ans d'expérience en gestion d’équipe. Motivé par l’acquisition permanente de nouvelles connaissances, je suis à la recherche d’une entreprise dans laquelle m’épanouir sur le long-terme.`
     ]
   },
   skills: {

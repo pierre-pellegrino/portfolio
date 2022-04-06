@@ -27,7 +27,7 @@ const works = [
     role: 'Développeur Front-End / Back-End',
     description: "immolib est un service qui aide les propriétaires à organiser leurs rendez-vous immobiliers et à récupérer les dossiers des candidats.",
     picture: 'immolib_mockup.png',
-    link: 'https://immolib.herokuapp.com/',
+    link: 'https://immolib.herokuapp.com',
     github_link: 'https://github.com/pierre-pellegrino/Immolib',
     detailImg: ['immolib.png', 'immolib2.PNG', 'immolib3.PNG', 'immolib_form.gif'],
     tags: [
@@ -35,7 +35,7 @@ const works = [
       'Sass',
       'Ruby On Rails'
     ],
-    detailDesc:'<p>immolib est un service qui aide les propriétaires à organiser leurs rendez-vous immobiliers et à récupérer les dossiers des candidats.<br /><br /> En tant que propriétaire, vous pouvez ajouter une annonce pour votre logement et créer un calendrier avec vos créneaux de disponibilité sur lesquels vos candidats s\'inscriront.<br /><br /> Les candidats peuvent vous envoyer leur dossier d\'achat ou de location sur notre espace sécurisé.</p>',
+    detailDesc:'<p>immolib aide les propriétaires à organiser leurs rendez-vous immobiliers et à récupérer les dossiers des candidats.<br /><br /> En tant que propriétaire, vous pouvez ajouter une annonce pour votre logement et créer un calendrier avec vos créneaux de disponibilité sur lesquels vos candidats s\'inscriront.<br /> Les candidats peuvent vous envoyer leur dossier d\'achat ou de location sur notre espace sécurisé.</p>',
     features: ['Calendrier intégré', 'Stockage sécurisé', 'Mails de relance automatiques', 'Paiement en ligne', 'Google OAuth'],
     featuresText: 'Caractéristiques principales :',
     linkText: 'Liens vers les projets :'
@@ -47,7 +47,7 @@ const works = [
     role: 'Développeur Front-End',
     description: "Marketplace immobilier.",
     picture: 'immocoin_mockup.png',
-    link: 'https://immocoin.vercel.app/',
+    link: 'https://immocoin.vercel.app',
     github_link: 'https://github.com/pierre-pellegrino/immocoin',
     detailImg: ['immocoin.png', 'immocoin3.png', 'immocoin4.png'],
     tags: [

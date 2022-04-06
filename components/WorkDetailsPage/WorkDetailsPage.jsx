@@ -38,11 +38,14 @@ const WorkDetailsPage = ({project}) => {
   } = project;
   const [theme] = useAtom(lightTheme);
 
+  const formatURL = link => link.replace(/^https?:\/\//, '').replace('.herokuapp', '').replace('.vercel', '');
+
   return (
     <>
     <Head>
       <title>{name} | Pierre Pellegrino</title>
       <meta name="description" content={`${name} project detailed on Pierre Pellegrino's portfolio`} />
+      <link rel="icon" href="/favicon.svg" />
     </Head>
     <div className={`${theme && light} ${workWrapper}`}>
     
@@ -52,11 +55,6 @@ const WorkDetailsPage = ({project}) => {
           <TagsDisplay tags={tags} />
         </div>
       )}
-
-      <div className={iconsWrapper}>
-        {link && <a className={cusLink} href={`${link}`} target="_blank" rel="noreferrer"><WorldIcon /></a> }
-        {github_link && <a className={cusLink} href={`${github_link}`} target="_blank" rel="noreferrer"><GithubIcon /></a> }
-      </div>
 
       <div className={paragraph}>
         <div className={paragraphText}>
@@ -83,6 +81,11 @@ const WorkDetailsPage = ({project}) => {
                 );
               })}
             </ul>
+          </div>
+
+          <div className={iconsWrapper}>
+            {link && <a className={cusLink} href={`${link}`} target="_blank" rel="noreferrer"><WorldIcon />{formatURL(link)}</a> }
+            {github_link && <a className={cusLink} href={`${github_link}`} target="_blank" rel="noreferrer"><GithubIcon />{name}</a> }
           </div>
           
         </div>

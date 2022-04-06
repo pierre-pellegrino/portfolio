@@ -27,7 +27,7 @@ const works = [
     role: 'Front-End / Back-End Developer',
     description: "immolib is a service that helps you organizing real estate appointments and collecting your candidates files.",
     picture: 'immolib_mockup.png',
-    link: 'https://immolib.herokuapp.com/',
+    link: 'https://immolib.herokuapp.com',
     github_link: 'https://github.com/pierre-pellegrino/Immolib',
     detailImg: ['immolib.png', 'immolib2.PNG', 'immolib3.PNG', 'immolib_form.gif'],
     tags: [
@@ -47,7 +47,7 @@ const works = [
     role: 'Front-End Developer',
     description: "Real estate marketplace.",
     picture: 'immocoin_mockup.png',
-    link: 'https://immocoin.vercel.app/',
+    link: 'https://immocoin.vercel.app',
     github_link: 'https://github.com/pierre-pellegrino/immocoin',
     detailImg: ['immocoin.png', 'immocoin3.png', 'immocoin4.png'],
     tags: [

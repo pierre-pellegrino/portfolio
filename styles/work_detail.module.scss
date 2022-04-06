@@ -94,13 +94,21 @@
     }
 
     .iconsWrapper {
-      svg {
-        fill: #000;
+      a {
+        color: #000;
+        svg {
+          fill: #000;
+        }
+
         &:hover {
-          fill: $violet;
+          color: $violet;
+          svg {
+            fill: $violet;
+          }
         }
       }
     }
+
   }
 }
 
@@ -167,9 +175,24 @@
 
 .iconsWrapper {
   display: flex;
-  justify-content: center;
-  margin: 0.75rem 0;
-  gap: 0.75rem;
+  justify-content: space-around;
+  margin: 1.5rem 0 0;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 0.5rem;
+
+    &:hover {
+        color: $primary;
+      svg {
+        fill: $primary;
+      }
+    }
+  }
 
   a:after {
     display: none;
@@ -184,10 +207,7 @@
     -ms-transition: fill 0.3s;
     -o-transition: fill 0.3s;
     cursor: pointer;
-
-    &:hover {
-      fill: $primary;
-    }
+    margin-right: 0.25rem;
   }
 }
 
@@ -200,7 +220,7 @@
   } 
 }
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1270px) {
   .workWrapper {
     p {
       font-size: 0.9rem;
